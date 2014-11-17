@@ -1,0 +1,47 @@
+@media screen and (max-width: 950px) {
+	#pagewrap {
+		width: 100%;
+	}
+	#user-info {
+		width: 100%;
+	}
+	#status-rating {
+		width: 45%
+	}
+	#big-buttons {
+		width: 100%;
+	}
+	#small-buttons {
+		width: 100%;
+	}
+	.big-button {
+		width: 60%
+	}
+	.small-button {
+		width: 25%
+	}
+}
+
+@media screen and (max-height: 600px) {
+	#pagewrap {
+		height: 100%;
+	}
+	#user-info {
+		height: 30%;
+	}
+	#status-rating {
+		height: 100%
+	}
+	#big-buttons {
+		height: 55%;
+	}
+	#small-buttons {
+		height: 10%;
+	}
+	.big-button {
+		height: 18%
+	}
+	.small-button {
+		height: 58%
+	}
+}

@@ -1,0 +1,75 @@
+#user-info {
+	width: 600px;
+	height: 150px;
+	border: 1px solid black;
+	margin: 0 auto;
+}
+
+#name-image {
+	float: left;
+}
+
+#image {
+	width: 113; 
+	height: 95;
+	border: 1px solid black;
+}
+
+#status-rating {
+	float: right;
+	width: 200px;
+	height: 85px;
+}
+
+/* #rating {
+	border: 1px solid black;
+} */
+
+#big-buttons {
+	width: 600px;
+	height:300px;
+	border: 1px solid black;
+	margin: 0 auto;
+}
+
+#small-buttons {
+	width: 600px; 
+	height:50px; 
+	border: 1px solid black; 
+	margin: 0 auto;
+}
+
+.big-button {
+	width:400; 
+	height:60; 
+	display: block; 
+	margin: 8px auto;
+	color: #00397D;
+	background: white;
+}
+
+.small-button {
+	width:100; 
+	height:30;
+	color: #00397D;
+}
+
+hr {
+	border-top: dashed 2px gray; 
+	border-bottom:white;
+}
+
+#button-map {
+	float:left;
+	background: white;
+} 
+
+#button-logout {
+	float: right;
+	background: url("turnoff-icon.png") no-repeat center white;
+}
+#button-edit {
+	display:block; 
+	margin: 0 auto;
+	background: url("pencil-icon.png") no-repeat center white;
+}
