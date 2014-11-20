@@ -1,0 +1,113 @@
+<html>
+
+<head>
+
+<link href='style.css' rel='stylesheet' type='text/css'>
+<link href='media-queries.css' rel='stylesheet' type='text/css'>
+
+<style>
+
+<!-- #favorite-1-info:active {
+	border: 1px solid white;
+}
+
+#favorite-2-info:active {
+	border: 1px solid white;
+} -->
+
+.big-button {
+	width: 113px;
+	height: 35px;
+	color: #00397D;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="pagewrap">
+
+	<div id="title"> 
+		LAZY GENIE
+	</div>
+	
+	<div id="list-favorites">
+		
+		<div id="favorite-1-info" onclick="location.href='user-page.html';">
+			<image id="image" src="women-photo.jpg"/>
+		
+			<div id="name-stat-dist">
+				<div id="name">
+				ANA
+				</div>
+				<div id="status-distance">
+				BUSY<br>
+				8.0 KM
+				</div>
+			</div>
+		</div>
+	
+		<div id="favorite-2-info" onclick="location.href='user-page.html';">
+			<image id="image" src="men-1-photo.jpg"/>
+		
+			<div id="name-stat-dist">
+				<div id="name">
+				MÁRIO
+				</div>
+				<div id="status-distance">
+				AVAILABLE<br>
+				5.0 KM
+				</div>
+			</div>
+		</div>
+		
+		<!-- <iframe src="favorites-page-of-within.html" height="300px" width="600px"></iframe> -->
+	</div>
+	
+	<hr />
+
+	<!-- <div id="menu-bar" style="width: 600px; margin: 0 auto">
+		<div id="group-1" style="height: 26px">
+			<button onclick="location.href='map.html';" style="float: left; color: #00397D">
+			<b>MAP</b>
+			</button>
+			<button onclick="goBack()" style="float: right; color: #00397D">
+			<b>BACK</b>
+			</button>
+		</div>
+		<div id="group-2" style="height: 26px; margin-top: 13px">
+			<button onclick="location.href='index.html';" style="float: left; color: #00397D">
+			<b>HOME</b>
+			</button>
+			<button style="float: right; color: #00397D">
+			<b>LOGOUT</b>
+			</button>
+		</div>
+	</div> -->
+	
+	<div id="menu-bar">
+		<div id="group-1">
+			<button id="button-map" onclick="location.href='map.html';">MAP</button>
+			<button id="button-back" onclick="goBack()"></button>
+		</div>
+			
+		<div id="group-2">
+			<button id="button-home" onclick="location.href='index.html';"></button>
+			<button id="button-logout"></button>
+		</div>
+	</div>
+</div>
+
+<script>
+
+function goBack() {
+	window.history.back()
+}
+
+</script>
+
+</body>
+
+</html>
