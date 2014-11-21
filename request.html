@@ -118,6 +118,31 @@ a {
 
 </style> -->
 
+<!--Load necessary jQuery and ccs files to Datepicker works-->
+	<link rel="stylesheet" href="jquery-ui.css">
+	<script src="jquery-1.10.2.js"></script>
+	<script src="jquery-ui.js"></script>
+	<script type="text/javascript">
+		var jQuery_1_10_2 = $.noConflict(true);
+	</script>
+<!-- -->
+<!-- Datepicker call -->
+	<script>
+		jQuery_1_10_2(function() {
+			jQuery_1_10_2( "#from-date" ).datepicker();
+		});
+	</script>
+<!-- -->
+<!-- Datepicker call -->
+	<script>
+		jQuery_1_10_2(function() {
+			jQuery_1_10_2( "#to-date" ).datepicker();
+		});
+	</script>
+<!-- -->
+
+<link rel="stylesheet" type="text/css" href="timepicki.css"/>
+
 </head>
 
 <body>
@@ -155,11 +180,13 @@ a {
 		LOCAL (*)
 		<input type="text" id="local"/><br>
 		<button id="select-on-map"> <b>SELECT ON MAP</b> </button>(*)<br>
-		FROM (*)
-		<input type="date" id="from-date"/><input type="time" id="from-time"/><br>
+		<span style="float: left">FROM (*)</span>
+		<input type="text" id="from-date" style="height: 18px; width: 72px; float: left"/><image id="eraser" src="Icons/eraser-icon.png" onclick="erase('from-date')"><input type="text" id="from-time" style="height: 18px; width: 75px; float: left"/><image id="eraser" src="Icons/eraser-icon.png" onclick="erase('from-time')"><br><br>
+		<!-- <input type="date" id="from-date"/><input type="time" id="from-time"/><br> -->
 		<!-- <input type="text" style="width: 400px"/><input type="text" style="width: 150px; margin-left: 50px"/> -->
-		TO
-		<input type="date" id="to-date"/><input type="time" id="to-time"/><br>
+		<span style="float: left">TO</span>
+		<input type="text" id="to-date" style="height: 18px; width: 72px; float: left"/><image id="eraser" src="Icons/eraser-icon.png" onclick="erase('to-date')"><input type="text" id="to-time" style="height: 18px; width: 75px; float: left"/><image id="eraser" src="Icons/eraser-icon.png" onclick="erase('to-time')"><br><br>
+		<!-- <input type="date" id="to-date"/><input type="time" id="to-time"/><br> -->
 		<!-- <input type="text" style="width: 400px"/><input type="text" style="width: 150px; margin-left: 50px"/> -->
 		<span>ALL DAY</span><input id="all-day" type="checkbox" onclick="allDay(checked)"><br>
 		<div id="forward"><button id="button-forward" onclick="changeClass('post')"></button></div>
@@ -230,7 +257,7 @@ function createSummary(elmnt) {
 	var toTime = document.getElementById("to-time");
 	var summaryFromTo = "<br>FROM: <u>11:00 16/11/2014</u><br>TO: <u>12:00 16/11/2014</u>";
 	if(allDay.checked)
-		summaryFromTo = "<br>FROM: <u>00:00 "+fromDate.value+"</u><br>TO: <u>23:59 "+fromDate.value+"</u>";
+		summaryFromTo = "<br>FROM: <u>12 : 00 : PM "+fromDate.value+"</u><br>TO: <u>11 : 59 PM "+fromDate.value+"</u>";
 	else if(toDate.value == "" || toTime.value == "")
 		summaryFromTo = "<br>FROM: <u>"+fromTime.value+" "+fromDate.value+"</u>";
 	else
@@ -256,7 +283,7 @@ function goBack() {
     if(mm<10){
         mm='0'+mm;
     } 
-    var today = yyyy+'-'+mm+'-'+dd;
+    var today = mm+'/'+dd+'/'+yyyy;
 	document.getElementById("from-date").value = today;
 <!-- } -->
 
@@ -270,11 +297,21 @@ function goBack() {
     } 
     if(mm<10){
         mm='0'+mm;
-    } 
-    var time = hh+':'+mm;
+    }
+	var time; 
+	if(hh > 12) {
+		hh = hh - 12;
+		time = '0'+hh+' : '+mm+' : PM';
+	}else if(hh == 0) {
+		hh = 12;
+		time = hh+' : '+mm+' : PM'; 
+	}else
+		time = hh+' : '+mm+' : AM'; 
 	document.getElementById("from-time").value = time;
 <!-- } -->
-
+	
+	
+	
 
 function allDay(c) {
 	var ft = document.getElementById("from-time");
@@ -286,7 +323,35 @@ function allDay(c) {
 	tt.disabled = c;
 }
 
+
+function erase(id) {
+	document.getElementById(id).value = "";
+} 
+
 </script>
+
+<!--Load necessary jQuery and css files to Timepicker works-->
+	
+	<script src="jquery-2.1.1.min.js">
+	</script>
+	<script type="text/javascript">
+		var jQuery_2_1_1 = $.noConflict(false);
+	</script>
+	<script src="timepicki.js">
+	</script>
+<!-- -->
+
+<!--Timepicker call -->
+	<script>
+		jQuery_2_1_1( "#from-time" ).timepicki();
+   	</script>
+<!-- -->
+
+<!--Timepicker call -->
+	<script>
+		jQuery_2_1_1( "#to-time" ).timepicki();
+   	</script>
+<!-- -->
 
 </body>
 

@@ -28,15 +28,15 @@ html * {
 	<div id="content">
 	
 		<img id="image-transparent" usemap="#canvasmap">
-		<img id="map" src="http://maps.googleapis.com/maps/api/staticmap?center=38.659978,-9.174957&zoom=16&size=600x180&sensor=false">
-		<canvas id="myCanvas" width="600px" height="180px"></canvas>
+		<img id="map" src="http://maps.googleapis.com/maps/api/staticmap?center=38.659978,-9.174957&zoom=16&size=270x180&sensor=false">
+		<canvas id="myCanvas" width="270px" height="180px"></canvas>
 		
 		<map name="canvasmap">
 			<!-- <area shape="rect"   coords="0,0,50,50"      onclick="alert('You clicked area 1')" > -->
 			<!-- <area shape="circle"   coords="300,200,9"  onclick="alert('You clicked area 2')" > -->
-			<area shape="circle"  href="#c1" coords="250,50,9"  onclick="location.href='user-page.html';" >
-			<area shape="circle"  href="#c2" coords="370,130,9"  onclick="location.href='user-page.html';" >
-			<area shape="circle"  href="#c3" coords="200,100,9"  onclick="location.href='user-page.html';" >
+			<area shape="circle"  href="#c1" coords="80,25,9"  onclick="location.href='user-page.html';" >
+			<area shape="circle"  href="#c2" coords="122,120,9"  onclick="location.href='user-page.html';" >
+			<area shape="circle"  href="#c3" coords="20,140,9"  onclick="location.href='user-page.html';" >
 		</map>
 	</div>
 	
@@ -71,37 +71,37 @@ img.onload = function() {
 	ctx.fillStyle="#808080";
 	ctx.strokeStyle="#808080";
 	ctx.beginPath();
-	ctx.arc(250,50,3,0,2*Math.PI);
+	ctx.arc(80,25,3,0,2*Math.PI);
 	ctx.fill();
 	ctx.beginPath();
-	ctx.arc(250,50,9,0,2*Math.PI);
+	ctx.arc(80,25,9,0,2*Math.PI);
 	ctx.stroke();
 	
 	ctx.fillStyle="#808080";
 	ctx.strokeStyle="#808080";
 	ctx.beginPath();
-	ctx.arc(370,130,3,0,2*Math.PI);
+	ctx.arc(122,120,3,0,2*Math.PI);
 	ctx.fill();
 	ctx.beginPath();
-	ctx.arc(370,130,9,0,2*Math.PI);
+	ctx.arc(122,120,9,0,2*Math.PI);
 	ctx.stroke();
 	
 	ctx.fillStyle="#808080";
 	ctx.strokeStyle="#808080";
 	ctx.beginPath();
-	ctx.arc(200,100,3,0,2*Math.PI);
+	ctx.arc(20,140,3,0,2*Math.PI);
 	ctx.fill();
 	ctx.beginPath();
-	ctx.arc(200,100,9,0,2*Math.PI);
+	ctx.arc(20,140,9,0,2*Math.PI);
 	ctx.stroke();
 	
 	ctx.fillStyle="#236B8E";
 	ctx.strokeStyle="#236B8E";
 	ctx.beginPath();
-	ctx.arc(300,75,3,0,2*Math.PI);
+	ctx.arc(135,90,3,0,2*Math.PI);
 	ctx.fill();
 	ctx.beginPath();
-	ctx.arc(300,75,9,0,2*Math.PI);
+	ctx.arc(135,90,9,0,2*Math.PI);
 	ctx.stroke();
 	
 };

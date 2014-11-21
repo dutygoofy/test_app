@@ -213,6 +213,16 @@ hr {
 }
 
 /*REQUEST*/
+#eraser {
+	width: 19px;
+	height: 19px;
+	float: left;
+}
+
+#eraser:active {
+	border: 1px solid white;
+}
+
 #tabs #tab-what {
 	background: white;
 }
@@ -334,15 +344,15 @@ a {
 
 /*MAP*/
 #content {
-	width: 600px; 
+	width: 270px; 
 	height: 180px; 
 	margin: 25px auto 50px; 
 	border: 1px solid black;
-	overflow: scroll;
+	/* overflow: scroll; */
 }
 
 #image-transparent {
-	width: 600px; 
+	width: 270px; 
 	height: 180px;
 }
 
