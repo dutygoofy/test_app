@@ -1,0 +1,348 @@
+@media screen and (max-width: 950px) {
+	#pagewrap {
+		width: 100%;
+	}
+	#title {
+		width: 100%;
+	}
+	#menu-bar {
+		width : 90%;
+	}
+	#menu-bar button {
+		width: 40%;
+	}
+	#name-image {
+		width: 40%;
+	}
+	#image {
+		width: 100%;
+	}
+	#small-buttons-user-page button {
+		width: 40%;
+	}
+	#user-info {
+		width: 90%;
+	}
+	#status-rating {
+		width: 45%
+	}
+	#big-buttons {
+		width: 90%;
+	}
+	#small-buttons-home {
+		width: 90%;
+	}
+	#small-buttons-user-page{
+		width: 90%;
+	}
+	.big-button {
+		width: 60%
+	}
+	.small-button {
+		width: 25%
+	}
+	.active, .inactive {
+		width: 90%;
+	}
+	#task {
+		width: 80%
+	}
+	#forward {
+		width: 50%;
+	}
+	#button-forward {
+		width: 100%;
+	}
+	#select-on-map {
+		width: 90%;
+	}
+	#local {
+		width: 65%;
+	}
+	#from-date, #to-date {
+		width: 49%;
+	}
+	#from-time, #to-time{
+		width: 26%;
+		margin-left: 2%;
+	}
+	#all-day {
+		width: 8%;
+		margin-left: 61%;
+	}
+	#are-you-sure {
+		width: 90%;
+	}
+	#button-no, #button-yes {
+		width: 45%;
+	}
+	#tabs { 
+		width: 90%;
+	}
+	.tab { 
+		width: 32.56%;
+	}
+	#other-user-image, #user-image {
+		width: 90%;
+	}
+	#other-user-image :first-child, #user-image :first-child {
+		width: 10%;
+	}
+	#talk {
+		width: 80%;
+	}
+	#write-message {
+		width: 90%;
+	}
+	#write-message > :first-child {
+		width: 70%;
+	}
+	#write-message > :last-child {
+		width: 30%;
+	}
+	#write-message > :last-child  > :first-child {
+		width: 100%;
+	}
+	#write-message > :last-child  > :last-child {
+		width: 80%;
+	}
+	#button-send {
+		width: 100%;
+	}
+	.text {
+		width: 88%;
+	}
+	#sended-message > :first-child {
+		width: 5%;
+	}
+	#sended-message > :last-child {
+		width: 5%;
+	}
+	#date-time-sended-message {
+		margin-left: 5%;
+		clear: both;
+	} 
+	#message-to-send {
+		width: 100%;
+	}
+	#list-favorites {
+		width: 90%;
+	}
+	#name-stat-dist {
+		width: 45%;
+	}
+	#status-distance {
+		width: 85%;
+	}
+	#list-favorites > div > :first-child {
+		width: 40%;
+	}
+	#call-options { 
+		width: 75%;
+	}
+	.option-button {
+		width: 100%;
+	}
+	/* #content {
+		width: 90%;
+	} */
+	
+}
+
+@media screen and (max-height: 600px) {
+	#pagewrap {
+		height: 100%;
+	}/*
+	#user-info {
+		height: 30%;
+	}
+	#status-rating {
+		height: 100%
+	}
+	#big-buttons {
+		height: 55%;
+	}
+	#small-buttons-home {
+		height: 10%;
+	}
+	.big-button {
+		height: 18%
+	}
+	.small-button {
+		height: 58%
+	}*/
+	#menu-bar div {
+		height: 10%;
+	}
+	#menu-bar button {
+		height: 100%;
+	}
+	#menu-bar #group-2 {
+		margin-top: 5%;
+	}
+	#image {
+		height: 63%;
+	}
+	#status-rating {
+		height: 100%;
+	}
+	#user-info {
+		height: 33%;
+	}
+	#small-buttons-user-page {
+		height: 30%;
+	}
+	#small-buttons-user-page div {
+		height: 20%;
+	}
+	#small-buttons-user-page button {
+		height: 100%;
+	}
+	#small-buttons-user-page #group-1, #small-buttons-user-page #group-2 {
+		margin-bottom: 5%;
+	}
+	#big-buttons {
+		height: 48%;
+	}
+	#small-buttons-home {
+		height: 7%;
+	}
+	.big-button {
+		height: 20%;
+		margin: 5% auto;
+	}
+	#big-buttons > :first-child {
+		margin-top: 0%;
+	} 
+	#big-buttons > :last-child {
+		margin-bottom: 0%;
+	}
+	.small-button {
+		height: 100%;
+	}
+	#list-favorites {
+		height: 62%;
+		max-height: 62%;
+	}
+	#list-favorites  > div {
+		height: 33%;
+	}
+	#list-favorites #favorite-1-info {
+		margin-top: 10%;
+	}
+	#list-favorites #favorite-2-info {
+		margin-top: 5%;
+	}
+	#favorite-1-info > :first-child {
+		height: 96%;
+	}
+	#favorite-2-info > :first-child {
+		height: 96%;
+	}
+	#forward {
+		height: 13%;
+	}
+	#what, #where-when, #post {
+		margin-top: 2%;
+	}
+	#what #forward {
+		margin: 1.5% auto 0%;
+	}
+	#what, #where-when {
+		font-size: 80%;
+	}
+	#button-forward {
+		height: 100%;
+	}
+	#select-on-map {
+		height: 8%;
+		margin-top: 2%;
+		margin-bottom: 2%;
+	}
+	#are-you-sure {
+		height: 21%;
+		margin: 5% auto;
+	}
+	#button-no, #button-yes {
+		height: 76%;
+	}
+	#tabs {
+		height: 6%;
+	}
+	.tab {
+		height: 100%;
+		line-height: 135%;
+	}
+	#description {
+		height: 25%;
+	}
+	#task {
+		margin-bottom: 2%;
+	}
+	#all-day {
+		height: 5%;
+	}
+	#from-date, #to-date, #from-time, #to-time {
+		height: 7%;
+	}
+	#content {
+		margin: 5% auto 8%;
+	}
+	#other-user-image :first-child, #user-image :first-child {
+		height: 100%;
+	}
+	#other-user-image {
+		margin-top: 5%;
+		height: 10%;
+	}
+	#user-image {
+		height: 10%;
+	}
+	#talk {
+		height: 27%;
+		max-height: 27%;
+	}
+	.text {
+		height: 100%;
+		font-size: 80%;
+	}
+	#write-message {
+		height: 10%;
+	}
+	#message-to-send {
+		height: 100%;
+	}
+	#write-message > :last-child {
+		height: 100%;
+	}
+	#write-message > :last-child  > :first-child {
+		height: 35%;
+	}
+	#write-message > :last-child  > :last-child {
+		height: 65%;
+	}
+	#button-send {
+		height: 100%;
+	}
+	#sended-message {
+		height: 35%;
+	}
+	#sended-message > :first-child {
+		height: 100%;
+	}
+	#sended-message > :last-child {
+		height: 100%;
+	}
+	#sended-message > :last-child  > :first-child {
+		height: 58%;
+	}
+	#date-time-sended-message {
+		font-size: 80%;
+	}
+	.option-button {
+		height: 12%;
+	}
+	#call-options {
+		margin: 9% auto;
+	}
+}

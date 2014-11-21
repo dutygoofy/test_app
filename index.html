@@ -1,0 +1,90 @@
+
+
+<html>
+
+<head>
+
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link href='style.css' rel='stylesheet' type='text/css'>
+<link href='media-queries.css' rel='stylesheet' type='text/css'>
+
+<style>
+html * {
+
+	font-family: 'Roboto', sans-serif !important;
+
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="pagewrap">
+	<div id="title">
+		LAZY GENIE
+	</div>
+	
+	<div id="user-info">
+		
+		<div id="name-image">
+			JOÃO<br>
+			<img id="image" src="men-2-photo.jpg"/>
+		</div>
+		
+		<div id="status-rating">
+			STATUS<br>
+			<select>
+				<option value="available">AVAILABLE</option>
+				<option value="busy">BUSY</option>
+				<option value="away">AWAY</option>
+			</select><br>
+			RATING<br>
+			<canvas id="rating" width="99" height="14">
+				
+			</canvas>
+		</div>
+	</div>
+	
+	<div id="big-buttons" >
+		<button class="big-button" id="" onclick="location.href='request.html';" >REQUEST WORLD</button>
+		<!-- <FORM>
+		<INPUT TYPE="button" style="font-weight: bold" value="REQUEST WORLD" class="big-button" id="" onClick="parent.location='request.html'">
+		</FORM> -->
+		<button class="big-button" id="" >WALL</button>
+		<button class="big-button" id="" >MY JOBS</button>
+		<button class="big-button" id="" onclick="location.href='favorites.html';" >FAVORITS</button>
+	</div>
+	
+	<hr />
+	
+	<div id="small-buttons-home" >
+		<button class="small-button" id="button-map" onclick="location.href='map.html';">MAP</button>
+		<button class="small-button" id="button-logout" ></button>
+		<button class="small-button" id="button-edit" ></button>
+	</div>
+</div>
+
+<script>
+
+var c = document.getElementById("rating");
+var ctx = c.getContext("2d");
+<!-- ctx.moveTo(90,0); -->
+<!-- ctx.lineTo(90,14); -->
+<!-- ctx.stroke(); -->
+
+ctx.fillStyle = "white";
+ctx.fillRect(0,0,90,14);
+ctx.fillStyle = "gray";
+ctx.fillRect(90,0,10,14);
+
+ctx.fillStyle = "#00397D";
+ctx.font = "11px Roboto";
+ctx.fillText("90%",18,11);
+
+</script>
+
+
+</body>
+
+</html>

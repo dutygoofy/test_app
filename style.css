@@ -1,0 +1,505 @@
+/*TODAS*/
+#pagewrap {
+	background: #00397D;
+}
+
+#title {
+	width: 650; 
+	border: 1px solid gray; 
+	background: lightgray; 
+	text-align: center; 
+	margin: 0 auto;
+}
+
+hr {
+	border-top: dashed 2px gray; 
+	border-bottom:white;
+}
+
+/*USER-PAGE, FAVORITES, REQUEST, MAP, CHAT e CALL*/
+#menu-bar {
+	width: 600px; 
+	margin: 0 auto;
+}
+
+#menu-bar div {
+	height: 32px;
+}
+
+#menu-bar #group-2 {
+	margin-top: 10px;
+}
+
+#menu-bar button {
+	width: 200px; 
+	height: 32px;
+}
+
+#menu-bar div :first-child {
+	float: left;
+}
+
+#menu-bar div :last-child {
+	float: right;
+}
+
+#menu-bar  #button-map {
+	color: #00397D; 
+	background: white;
+	font-weight: bold;
+}
+
+#menu-bar #button-back {
+	background: url('Icons/back-icon.png') no-repeat center white;
+}
+
+#menu-bar #button-home {
+	background: url('Icons/home-icon.png') no-repeat center white;
+}
+
+#menu-bar #button-logout {
+	background: url('Icons/turnoff-icon.png') no-repeat center white;
+}
+
+/*HOME e USER-PAGE*/
+#image {
+	width: 95; 
+	height: 95;
+	border: 1px solid black;
+}
+
+#status-rating {
+	float: right;
+	width: 200px;
+	height: 85px;
+}
+
+#name-image {
+	float: left;
+}
+
+#user-info {
+	width: 600px;
+	height: 150px;
+	margin: 0 auto;
+	color: white;
+}
+
+/*HOME*/
+#big-buttons {
+	width: 600px;
+	height:300px;
+	margin: 0 auto;
+}
+
+#small-buttons-home {
+	width: 600px; 
+	height:50px;
+	margin: 0 auto;
+}
+
+.big-button {
+	width:400; 
+	height:60; 
+	display: block; 
+	margin: 8px auto;
+	color: #00397D;
+	background: white;
+	font-weight: bold;
+}
+
+.small-button {
+	width:100; 
+	height:30;
+	color: #00397D;
+}
+
+#small-buttons-home #button-map {
+	float:left;
+	background: white;
+	font-weight: bold;
+} 
+
+#small-buttons-home #button-logout {
+	float: right;
+	background: url("Icons/turnoff-icon.png") no-repeat center white;
+}
+
+#small-buttons-home #button-edit {
+	display:block; 
+	margin: 0 auto;
+	background: url("Icons/pencil-icon.png") no-repeat center white;
+}
+
+/*USER-PAGE*/
+#rating-other-user {
+	width: 95px;
+	background: white;
+	color: #00397D;
+}
+
+#small-buttons-user-page {
+	height:250px; 
+	width:600px; 
+	margin: 0 auto; 
+}
+
+#small-buttons-user-page div {
+	height: 24px;
+} 
+
+#small-buttons-user-page #group-1, #small-buttons-user-page #group-2 {
+	margin-bottom: 10px;
+}
+
+#small-buttons-user-page div :first-child {
+	float: left;
+}
+
+#small-buttons-user-page div :last-child {
+	float: right;
+}
+
+#small-buttons-user-page button {
+	height: 24px;
+	width: 113px;
+	background: white;
+	color: #00397D;
+	font-weight: bold;
+}
+
+#small-buttons-user-page #button-favorite {
+	background: url('Icons/favorite-icon.png') no-repeat center white;
+}
+
+/*FAVORITES*/
+#list-favorites {
+	width: 600px; 
+	height: 300px; 
+	max-height:300px; 
+	margin: 0 auto; 
+	overflow: auto;
+}
+
+#list-favorites  > div{
+	height: 95px; 
+	color: white;
+}
+
+#list-favorites #favorite-1-info {
+	margin-top: 20px;
+}
+
+#list-favorites #favorite-2-info {
+	margin-top: 10px;
+}
+
+#name-stat-dist {
+	float: right; 
+	width: 200px;
+}
+
+#status-distance {
+	width: 188px; 
+	margin-left: 12px;
+}
+
+#favorite-1-info:active {
+	border: 1px solid white;
+}
+
+#favorite-2-info:active {
+	border: 1px solid white;
+}
+
+/*REQUEST*/
+#eraser {
+	width: 19px;
+	height: 19px;
+	float: left;
+}
+
+#eraser:active {
+	border: 1px solid white;
+}
+
+#tabs #tab-what {
+	background: white;
+}
+
+#tabs #tab-where-when {
+	background: lightgray;
+}
+
+#tabs #tab-post {
+	background: lightgray;
+}
+
+#tabs a {
+	color: #00397D;
+	font-weight: bold;
+}
+
+.active, .inactive {
+	width: 600px; 
+	margin: 0 auto; 
+	color: white;
+}
+
+#task {
+	width:231px;
+}
+
+#forward {
+	height:50px; 
+	width:280px;
+}
+
+#what, #where-when, #post {
+	margin-top: 10px;
+} 
+
+#what #forward {
+	margin: 5px auto 0px;
+}
+
+#where-when #forward {
+	margin: 0 auto;
+}
+
+#button-forward {
+	width: 280px; 
+	height: 50px; 
+	background: url(Icons/arrow-right-icon.png) no-repeat center white;
+}
+
+#select-on-map {
+	width: 600px; 
+	height: 30px; 
+	background: white; 
+	color: #00397D;
+}
+
+#from-time, #to-time {
+	margin-left : 40px;
+}
+
+#local {
+	width: 600px;
+}
+
+#all-day {
+	width: 22px; 
+	height: 22px; 
+	margin-left: 166px;
+}
+
+#are-you-sure {
+	text-align: center; 
+	width: 400px; 
+	margin: 0 auto; 
+	height: 68px;
+}
+
+#button-no {
+	float: left; 
+	width: 150px; 
+	height: 45px; 
+	background: url(Icons/denied-icon.png) no-repeat center white;
+}
+
+#button-yes {
+	float: right; 
+	width: 150px; 
+	height: 45px; 
+	background: url(Icons/accept-icon.png) no-repeat center white;
+}
+
+#tabs {
+	width: 600px;
+	height: 50px;
+	margin: 0 auto;
+}
+
+.tab {
+	border: 1px solid gray;
+	height: 50px;
+	width: 198px;
+	float: left;
+	line-height: 50px;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+.active {
+	display: block;
+}
+
+.inactive {
+	display: none;
+}
+
+/*MAP*/
+#content {
+	width: 270px; 
+	height: 180px; 
+	margin: 25px auto 50px; 
+	border: 1px solid black;
+	/* overflow: scroll; */
+}
+
+#image-transparent {
+	width: 270px; 
+	height: 180px;
+}
+
+#map {
+	display: none;
+}
+
+#myCanvas {
+	position: relative; 
+	margin-left: 0px;
+	margin-top: -180px; 
+	z-index: -1;
+}
+
+/*CHAT*/
+#other-user-image {
+	width: 600px; 
+	margin: 0 auto;	
+}
+
+#other-user-image :first-child, #user-image :first-child {
+	width: 47;
+	height: 47;
+	border: 1px solid black;
+}
+
+#user-image {
+	width: 600px;
+	height: 46px; 
+	margin: 0 auto;
+}
+
+#user-image :first-child {
+	float: right;
+}
+
+#talk {
+	width: 520px; 
+	height: 248px; 
+	max-height: 248px; 
+	margin: 0 auto; 
+	overflow: auto;
+}
+
+.text {
+	border: 2px solid black;
+	height: 100px;
+	width: 95%;
+	float: left;
+}
+.left-triangle {
+	border-style: solid;
+	border-width: 8px 0px 8px 10px;
+	border-color: transparent black;
+	
+}
+.right-triangle {
+	border-style: solid;
+	border-width: 8px 10px 8px 0px;
+	border-color: transparent black;
+	float: left;
+}
+
+#sended-message .text {
+	border-top-right-radius: 10px;
+}
+
+#received-message .text {
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 10px;
+}
+
+#write-message {
+	width: 600px; 
+	height: 70px; 
+	margin: 0 auto; 
+}
+
+#message-to-send {
+	width: 400px;
+	height: 65px;
+}
+
+#write-message > :first-child {
+	width: 445px; 
+	float: left;
+}
+
+#write-message > :last-child {
+	width: 150px; 
+	height: 70px; 
+	float: right;
+}
+
+#write-message > :last-child  > :first-child {
+	width: 150px; 
+	height: 32px; 
+}
+
+#write-message > :last-child  > :last-child {
+	width: 100px; 
+	height:30px; 
+	float: right;
+}
+
+#button-send {
+	width:100px; 
+	height:30px; 
+	color: #00397D; 
+	background: white;
+	font-weight: bold;
+}
+
+#sended-message {
+	height: 104px;
+}
+
+#sended-message > :first-child {
+	width: 10px; 
+	float: left; 
+	height: 100px;
+}
+
+#sended-message > :last-child {
+	width: 10px; 
+	height: 100px; 
+	float: left;
+}
+
+#sended-message > :last-child  > :first-child {
+	height: 80px;
+}
+
+#date-time-sended-message {
+	margin-left: 10px;
+} 
+
+/*CALL*/
+.option-button {
+	width: 500px;
+	height: 40px;
+	background: white;
+	color: #00397D;
+	font-weight: bold;
+}
+
+#call-options {
+	margin: 30px auto; 
+	width: 500px;
+}

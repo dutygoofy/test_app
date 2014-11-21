@@ -1,0 +1,68 @@
+<html>
+
+<head>
+
+<link href='style.css' rel='stylesheet' type='text/css'>
+<link href='media-queries.css' rel='stylesheet' type='text/css'>
+
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+<style>
+html * {
+
+	font-family: 'Roboto', sans-serif !important;
+
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="pagewrap">
+
+	<div id="title">
+		LAZY GENIE
+	</div>
+
+	<div id="call-options">
+		
+		<button class="option-button" id="">MOBILE PHONE</button>
+		
+		<button class="option-button" id="">SKYPE</button>
+		
+		<button class="option-button" id="">VIBER</button>
+		
+		<button class="option-button" id="">...</button>
+	
+	</div>
+	
+	<hr />
+
+	<div id="menu-bar">
+	
+		<div id="group-1">
+			<button id="button-map" onclick="location.href='map.html';">MAP</button>
+			<button id="button-back" onclick="goBack()"></button>
+		</div>
+		
+		<div id="group-2">
+			<button id="button-home" onclick="location.href='index.html';"></button>
+			<button id="button-logout"></button>
+		</div>
+	
+	</div>
+	
+</div>
+
+<script>
+
+function goBack() {
+	window.history.back()
+}
+
+</script>
+
+</body>
+
+</html>
