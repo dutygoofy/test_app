@@ -2,10 +2,13 @@
 
 <head>
 
+
 <link href='style.css' rel='stylesheet' type='text/css'>
 <link href='media-queries.css' rel='stylesheet' type='text/css'>
 
 <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+<script src="jquery-1.11.1.min.js"></script>
 
 <style>
 html * {
@@ -111,7 +114,7 @@ html * {
 	
 	<div id="menu-bar">
 		<div id="group-1">
-			<button id="button-map" onclick="location.href='map.html';">MAP</button>
+			<button id="button-nearest-users" onclick="location.href='nearest-users.html';">NEAREST USERS</button>
 			<button id="button-back" onclick="goBack()"></button>
 		</div>
 		<div id="group-2">
@@ -135,10 +138,14 @@ function sendMessage() {
 	dateTime = currentTime()+" on "+currentDate();
 		
 	t.innerHTML = t.innerHTML + "<div id='sended-message'><div></div><div class='text'>"+mts.value+"</div><div><div></div><div class='left-triangle'></div></div></div><div id='date-time-sended-message'>"+dateTime+"</div>";
+
+	$.get("http://localhost/teste-file-write-read.php?userName=joao&otherUserName=mario&mensage="+mts.value+"&dateTime="+dateTime,function(data){
+	});
 	
 	mts.value = "";
 	
 	t.scrollTop = t.scrollHeight;
+	
 }
 
 
@@ -176,6 +183,28 @@ function currentTime() {
     var time = hh+':'+mm;
 	return time;
 }
+
+</script>
+
+<script>
+
+setInterval(function() {
+	$.get("http://localhost/teste-file-write-read.php?userName=joao&otherUserName=mario&mensage=&dateTime=",function(data){
+		$("#talk").html(data);
+	
+		var t = document.getElementById("talk");
+		t.scrollTop = t.scrollHeight;
+	});
+}, 1000);
+
+/*$.get("http://localhost/teste-file-write-read.php?userName=joao&otherUserName=mario&mensage=&dateTime=",function(data){
+	$("#talk").html(data);
+	
+	var t = document.getElementById("talk");
+	t.scrollTop = t.scrollHeight;
+});*/
+
+
 
 </script>
 

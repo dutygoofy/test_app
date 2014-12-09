@@ -1,0 +1,99 @@
+<html>
+
+<head>
+
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+<link href='style.css' rel='stylesheet' type='text/css'>
+<link href='media-queries.css' rel='stylesheet' type='text/css'>
+
+<style>
+html * {
+
+	font-family: 'Roboto', sans-serif !important;
+
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="pagewrap">
+
+	<div id="title">LAZY GENIE</div>
+
+	<div id="content-wall">
+		<div id="tabs-wall">
+			<div id="tab-all"><a href="#all" onclick="changeClass('all')">ALL</a></div>
+			<div id="tab-r-o-w"><a href="#r-o-w" onclick="changeClass('r-o-w')">REQUESTS ON WALL</a></div>
+		</div>
+		<div class="all" style="border: 1px solid black">
+			USER A GIVES USER B<br>
+			A ***** RATING
+		</div>
+		<div class="all r-o-w" style="border: 1px solid black">
+			USER C MADE A<br>
+			REQUEST. DISTANCE: 1km
+		</div>
+		<div class="all" style="border: 1px solid black">
+			USER B ACCEPTED<br>
+			USER A REQUEST
+		</div>
+		<div class="all r-o-w" style="border: 1px solid black">
+			USER A MADE A<br>
+			REQUEST. DISTANCE: 12km
+		</div>
+		<div class="all" style="border: 1px solid black">
+			USER D GAVE USER G<br>
+			A *** REVIEW
+		</div>
+		<div class="all" style="border: 1px solid black">
+			USER G is now<br>
+			online. DISTANCE: 2km
+		</div>
+	</div>
+	
+	<hr />
+	
+	<div id="menu-bar">
+		<div id="group-1">
+			<button id="button-nearest-users" onclick="location.href='nearest-users.html';">NEAREST USERS</button>
+			<button id="button-back" onclick="goBack()"></button>
+		</div>
+			
+		<div id="group-2">
+			<button id="button-home" onclick="location.href='index.html';"></button>
+			<button id="button-logout"></button>
+		</div>
+	</div>
+
+</div>
+
+<script src="jquery-1.11.1.min.js"></script>
+
+<script>
+
+function goBack() {
+	window.history.back()
+}
+
+function changeClass(c) {
+	if(c == "all") {
+		$(".all").show(); 
+		document.getElementById("tab-all").style.background = "white";
+		document.getElementById("tab-r-o-w").style.background = "lightgray";
+	}
+	else {
+		$(".all").hide();
+		$(".r-o-w").show();
+		document.getElementById("tab-all").style.background = "lightgray";
+		document.getElementById("tab-r-o-w").style.background = "white";
+	}
+}
+
+</script>
+
+</body>
+
+</html>

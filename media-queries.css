@@ -39,7 +39,7 @@
 		width: 60%
 	}
 	.small-button {
-		width: 25%
+		width: 29%
 	}
 	.active, .inactive {
 		width: 90%;
@@ -47,11 +47,17 @@
 	#task {
 		width: 80%
 	}
-	#forward {
+	#what #forward {
 		width: 50%;
 	}
-	#button-forward {
+	#where-when #forward {
+		width: 90%;
+	}
+	#what button {
 		width: 100%;
+	}
+	#where-when button {
+		width: 50%;
 	}
 	#select-on-map {
 		width: 90%;
@@ -146,7 +152,18 @@
 	/* #content {
 		width: 90%;
 	} */
-	
+	#big-buttons-edit {
+		width: 80%;
+	}
+	#big-buttons-edit  button {
+		width: 100%;
+	}
+	#content-wall {
+		width: 90%;
+	}
+	#tabs-wall div {
+		width: 49%;
+	}
 }
 
 @media screen and (max-height: 600px) {
@@ -171,8 +188,9 @@
 	.small-button {
 		height: 58%
 	}*/
+	
 	#menu-bar div {
-		height: 10%;
+		height: 10.5%;
 	}
 	#menu-bar button {
 		height: 100%;
@@ -202,14 +220,14 @@
 		margin-bottom: 5%;
 	}
 	#big-buttons {
-		height: 48%;
+		height: 45%;
 	}
 	#small-buttons-home {
-		height: 7%;
+		height: 10%;
 	}
 	.big-button {
 		height: 20%;
-		margin: 5% auto;
+		margin: 4% auto;
 	}
 	#big-buttons > :first-child {
 		margin-top: 0%;
@@ -254,10 +272,16 @@
 	#button-forward {
 		height: 100%;
 	}
+	#button-backward {
+		height: 100%;
+	}
 	#select-on-map {
 		height: 8%;
 		margin-top: 2%;
 		margin-bottom: 2%;
+	}
+	#post {
+		height: 56.7%;
 	}
 	#are-you-sure {
 		height: 21%;
@@ -286,7 +310,7 @@
 		height: 7%;
 	}
 	#content {
-		margin: 5% auto 8%;
+		margin: 14% auto 21%;
 	}
 	#other-user-image :first-child, #user-image :first-child {
 		height: 100%;
@@ -345,4 +369,27 @@
 	#call-options {
 		margin: 9% auto;
 	}
+	#big-buttons-edit {
+		height: 60%;
+		margin-top: 7%;
+	}
+	#big-buttons-edit button {
+		height: 17.5%;
+		margin-bottom: 8.75%;
+	}
+	#big-buttons-edit > :last-child {
+		margin-bottom: 0%;
+	}
+	#content-wall {
+		height: 65%;
+		font-size: 90%;
+	}
+	#tabs-wall {
+		height: 18%;
+	}
+	#tabs-wall div {
+		height: 100%;
+		line-height: 200%; 
+	}
+
 }

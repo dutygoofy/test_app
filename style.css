@@ -12,13 +12,13 @@
 }
 
 hr {
-	border-top: dashed 2px gray; 
+	border-top: dashed 2px white; 
 	border-bottom:white;
 }
 
-/*USER-PAGE, FAVORITES, REQUEST, MAP, CHAT e CALL*/
+/*USER-PAGE, FAVORITES, REQUEST, NEAREST-USERS, CHAT, CALL, EDIT e WALL*/
 #menu-bar {
-	width: 600px; 
+	width: 600px;
 	margin: 0 auto;
 }
 
@@ -33,6 +33,7 @@ hr {
 #menu-bar button {
 	width: 200px; 
 	height: 32px;
+	float: left;
 }
 
 #menu-bar div :first-child {
@@ -43,7 +44,7 @@ hr {
 	float: right;
 }
 
-#menu-bar  #button-map {
+#menu-bar  #button-nearest-users, #menu-bar #button-help {
 	color: #00397D; 
 	background: white;
 	font-weight: bold;
@@ -114,7 +115,7 @@ hr {
 	color: #00397D;
 }
 
-#small-buttons-home #button-map {
+#small-buttons-home #button-nearest-users {
 	float:left;
 	background: white;
 	font-weight: bold;
@@ -252,7 +253,7 @@ hr {
 
 #forward {
 	height:50px; 
-	width:280px;
+	/*width:280px;*/
 }
 
 #what, #where-when, #post {
@@ -261,17 +262,30 @@ hr {
 
 #what #forward {
 	margin: 5px auto 0px;
+	width:280px;
 }
 
 #where-when #forward {
 	margin: 0 auto;
+	width: 560px;
+}
+
+#where-when #forward button {
+	float: left;
 }
 
 #button-forward {
 	width: 280px; 
-	height: 50px; 
+	height: 50px;
 	background: url(Icons/arrow-right-icon.png) no-repeat center white;
 }
+
+#button-backward {
+	width: 280px; 
+	height: 50px; 
+	background: url(Icons/arrow-left-icon.png) no-repeat center white;
+}
+
 
 #select-on-map {
 	width: 600px; 
@@ -342,7 +356,7 @@ a {
 	display: none;
 }
 
-/*MAP*/
+/*NEAREST-USERS*/
 #content {
 	width: 270px; 
 	height: 180px; 
@@ -354,6 +368,8 @@ a {
 #image-transparent {
 	width: 270px; 
 	height: 180px;
+	z-index: 2;
+	position: relative;
 }
 
 #map {
@@ -364,7 +380,7 @@ a {
 	position: relative; 
 	margin-left: 0px;
 	margin-top: -180px; 
-	z-index: -1;
+	z-index: 1;
 }
 
 /*CHAT*/
@@ -398,21 +414,23 @@ a {
 }
 
 .text {
-	border: 2px solid black;
+	background: lightgray;
+	border: 2px solid lightgray;
 	height: 100px;
 	width: 95%;
 	float: left;
+	color: black;
 }
 .left-triangle {
 	border-style: solid;
 	border-width: 8px 0px 8px 10px;
-	border-color: transparent black;
+	border-color: transparent lightgray;
 	
 }
 .right-triangle {
 	border-style: solid;
 	border-width: 8px 10px 8px 0px;
-	border-color: transparent black;
+	border-color: transparent lightgray;
 	float: left;
 }
 
@@ -502,4 +520,58 @@ a {
 #call-options {
 	margin: 30px auto; 
 	width: 500px;
+}
+
+#button-mobile-phone {
+	background: url('Icons/phone-icon.png') no-repeat center white;
+}
+
+/*EDIT*/
+#big-buttons-edit {
+	margin: 10px auto 0; 
+	width: 500px;
+}
+
+#big-buttons-edit button {
+	color: #00397D; 
+	background: white;
+	font-weight: bold;
+	margin-bottom: 10px; 
+	width: 500px; 
+	height: 50px;
+}
+
+#big-buttons-edit > :last-child {
+	margin-bottom: 0; 
+}
+
+/*WALL*/
+#content-wall {
+	width: 600px; 
+	margin: 0 auto; 
+	color: white; 
+	height: 300px;
+}
+
+#tabs-wall {
+	height: 50px; 
+	color: #00397D; 
+	font-weight: bold;
+}
+
+#tabs-wall div {
+	height: 50px; 
+	width: 298px; 
+	float: left; 
+	text-align: center; 
+	line-height: 50px; 
+	border: 1px solid gray;
+}
+
+#tabs-wall > :first-child {
+	background: white;
+}
+
+#tabs-wall > :last-child {
+	background: lightgray;
 }

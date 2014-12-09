@@ -166,6 +166,7 @@ a {
 	</div>
 	
 	<div class="active" id="what"> 
+		TO: Mário<br>
 		TASK (*)<br>
 		<input type="text" id="task"/>
 		<br>
@@ -189,7 +190,10 @@ a {
 		<!-- <input type="date" id="to-date"/><input type="time" id="to-time"/><br> -->
 		<!-- <input type="text" style="width: 400px"/><input type="text" style="width: 150px; margin-left: 50px"/> -->
 		<span>ALL DAY</span><input id="all-day" type="checkbox" onclick="allDay(checked)"><br>
-		<div id="forward"><button id="button-forward" onclick="changeClass('post')"></button></div>
+		<div id="forward">
+		<button id="button-backward" onclick="changeClass('what')"></button>
+		<button id="button-forward" onclick="changeClass('post')"></button>
+		</div>
 	</div>
 	
 	<div class="inactive" id="post">
@@ -200,7 +204,7 @@ a {
 	
 	<div id="menu-bar">
 		<div id="group-1">
-			<button id="button-map" onclick="location.href='map.html';">MAP</button>
+			<button id="button-nearest-users" onclick="location.href='nearest-users.html';">NEAREST USERS</button>
 			<button id="button-back" onclick="goBack()"></button>
 		</div>
 			
@@ -301,7 +305,9 @@ function goBack() {
 	var time; 
 	if(hh > 12) {
 		hh = hh - 12;
-		time = '0'+hh+' : '+mm+' : PM';
+		if(hh < 10)
+			hh = '0'+hh;
+		time = hh+' : '+mm+' : PM';
 	}else if(hh == 0) {
 		hh = 12;
 		time = hh+' : '+mm+' : PM'; 
