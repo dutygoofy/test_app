@@ -391,5 +391,7 @@
 		height: 100%;
 		line-height: 200%; 
 	}
-
+	#tabs-wall  > :first-child {
+		line-height: 325%;
+	}
 }
